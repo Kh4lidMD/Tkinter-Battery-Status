@@ -1,5 +1,4 @@
 from tkinter import *
-from matplotlib.pyplot import fill, text
 from psutil import sensors_battery
 from time import sleep
 
