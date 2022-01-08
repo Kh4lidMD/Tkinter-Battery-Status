@@ -5,8 +5,8 @@ This software can detect if the power battery was plugged or not, if yes, it wil
 * Green if more than 50%
 * Yellow if less than 50%
 * Red if less than 20%
-<br>
-psutil (python system and process utilities) is a cross-platform library for retrieving information on running processes and system utilization (CPU, memory, disks, network, sensors) in Python. <br>
+## About psutil
+psutil (python system and process utilities) is a cross-platform library for retrieving information on running processes and system utilization (CPU, memory, disks, network, sensors) in Python.
 To download `psutil` using pip:
 ```
 pip install psutil
