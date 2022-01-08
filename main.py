@@ -1,12 +1,12 @@
 from tkinter import *
 from psutil import sensors_battery
-from time import sleep
 
 window = Tk()
 window.title("Battery Status")
 window.geometry("300x300")
 window.config(bg='black')
 window.iconphoto(False, PhotoImage(file='icon.png'))
+
 def get_percentage():
     return sensors_battery().percent
 
@@ -17,7 +17,7 @@ header = Label(
     font=10)
 header.pack()
 
-percent =  Label(
+percent = Label(
     window, text="Here is the percentage", 
     font=7, anchor="center",
     fg='green', bg='black')
