@@ -1,5 +1,6 @@
 from tkinter import *
 from psutil import sensors_battery
+import threading
 
 window = Tk()
 window.title("Battery Status")
@@ -47,8 +48,13 @@ def recheck_percent():
         color = 'red'
     percent.config(fg=color, text=f'{result}%')
 
-recheck_percent()
-recheck_power()
+def main():
+    while True:
+        recheck_percent()
+        recheck_power()
+
+th = threading.Thread(target=main)
+th.start()
 
 is_plugged.pack()
 
