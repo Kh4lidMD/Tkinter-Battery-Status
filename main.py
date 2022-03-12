@@ -1,5 +1,6 @@
 from tkinter import *
 from psutil import sensors_battery
+from time import sleep
 import threading
 
 window = Tk()
@@ -52,7 +53,7 @@ def main():
     while True:
         recheck_percent()
         recheck_power()
-
+        sleep(1)
 th = threading.Thread(target=main)
 th.start()
 
